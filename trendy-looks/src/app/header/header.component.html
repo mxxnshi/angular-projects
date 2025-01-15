@@ -1,0 +1,30 @@
+<mat-toolbar color="primary" class="header-toolbar">
+  <!-- Left section: Menu icon (visible on small screens) -->
+  <button mat-icon-button class="menu-icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <!-- Center section: Logo -->
+  <span class="toolbar-title">My Application</span>
+
+  <!-- Spacer for pushing the right section -->
+  <span class="spacer"></span>
+
+  <!-- Right section: Menu -->
+  <div class="toolbar-actions">
+    <button mat-button class="menu-item">Home</button>
+    <button mat-button class="menu-item">Fashion</button>
+    <button mat-button class="menu-item">HairStyle</button>
+    <button mat-button class="menu-item">About</button>
+    <button mat-button class="menu-item">Contact</button>
+    <!-- Profile menu -->
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Profile</button>
+      <button mat-menu-item>Settings</button>
+      <button mat-menu-item>Logout</button>
+    </mat-menu>
+  </div>
+</mat-toolbar>

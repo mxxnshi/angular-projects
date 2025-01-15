@@ -1,0 +1,22 @@
+/* The header container holding the logo and text */
+.header {
+    display: flex;                  /* Flexbox to align items horizontally */
+    align-items: center;            /* Vertically center the items */
+    justify-content: flex-start;    /* Align items to the left */
+    padding: 20px;                  /* Add some space around */
+  }
+  
+  /* Styling the logo */
+  .logo {
+    width: 50px;                    /* Adjust the size of the logo */
+    height: auto;                   /* Maintain the aspect ratio */
+    margin-right: 15px;             /* Space between logo and text */
+  }
+  
+  /* Styling the title text */
+  .title {
+    font-size: 24px;                /* Adjust the size of the text */
+    font-weight: bold;              /* Make the text bold */
+    color: #333;                    /* Text color */
+  }
+  

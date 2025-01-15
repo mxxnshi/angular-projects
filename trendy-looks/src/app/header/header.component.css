@@ -1,0 +1,43 @@
+
+/* Main toolbar styling */
+.header-toolbar {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+  }
+  
+  /* Title styling */
+  .toolbar-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  /* Spacer to push right-side actions */
+  .spacer {
+    flex: 1 1 auto;
+  }
+  
+  /* Actions section styling */
+  .toolbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    
+  }
+  
+  /* Hide menu items on small screens */
+  @media (max-width: 768px) {
+    .toolbar-actions .menu-item {
+      display: block;
+    }
+  
+    .menu-icon {
+      display: inline-flex;
+    }
+  }
+  
+  /* Show menu icon only on small screens */
+  .menu-icon {
+    display: none;
+  }
+  
